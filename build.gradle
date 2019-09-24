@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:6.14.3'
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile 'io.rest-assured:rest-assured:4.0.0'
+}
+
+test {
+    useTestNG()
+}
